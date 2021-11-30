@@ -191,6 +191,10 @@ section {
   color: whitesmoke;
 }
 
+.contact-email {
+  font-size: 1.2em;
+}
+
 h2 {
   text-transform: uppercase;
   color: #4A964D;
@@ -478,6 +482,9 @@ img {
   }
   header {
     padding: 2em 2em 2em 4em;
+  }
+  .contact-email {
+    font-size: 2em;
   }
   /*GALLERY*/
   .project-container {
