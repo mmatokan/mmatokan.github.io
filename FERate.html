@@ -1,154 +1,293 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>FERate</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/story/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	  <link rel="icon" href="favicon.ico" type="image/x-icon">
+   
+    <script src="js/modal.js"></script>
 
-        <!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">My Portfolio</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-                        <li><a href="Jezikolovac.html">Previous</a></li>
-					</ul>
-				</nav>
-			</header>
+</head>
+<body>
+    <!-- Upper navigation bar --> 
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo-text">My Portfolio</a>
+            <a href="index.html" class="logo-icon"><img src="images/icons/home.svg" alt=""></a>
 
-        <!-- Wrapper -->
-			<div id="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">About me</a></li>
+                    <li><a href="index.html#portfolio">My work</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        
+    <!-- My work -->
+    <section id="portfolio" class="panel">
+            
+      <div class="projects-header transition2">
+        <h3>VR application</h3>
+        <h2>FERate</h2>
+        <p class="project-desc">FERate is a Quality of Experience assessment system designed to be accessible from within Virtual Reality. <br>
+            This was a group project for Software Design course, and it comprised of three parts. 
+            The first part was creating a game for VR, the second part was creating a QoE system within VR, 
+            and the third part was creating a desktop system for managing and creating questionnaires and collecting and representing 
+            collected data. I was the team leader, and I worked on creating the QoE System.
+            </p>
+            <h4><b>Unity 3D, C#</b></h4>
+      </div>
 
-				<!-- Main -->
-					<section id="main" class="wrapper alt">
-						<div class="inner">
-							<h1 class="major">FERate</h1>
+      <div class="projects-container">
+        <div class="grid">
 
-                                <!-- text -->
-                                <div id="wrapper" class="divided">
-                                        <div class="inner">
-                                            <p>FERate is a Quality of Experience assessment system designed to be accessible from within Virtual Reality.</p>
-                                            <p>This was a group project for Software Design course, and it comprised of three parts. The first part was creating a game for VR, the second part was creating a QoE system within VR, and the third part was creating a desktop system for managing and creating questionnaires and collecting and representing collected data. I was the team leader, and I worked on creating the QoE System.</p>
-                                            <p><b>Unity 3D, C#</b></p>
-                                        </div>
-                                    </div>
-                            </div>
-                         
+          <div class="grid-col grid-col--1"></div>
+          <div class="grid-col grid-col--2"></div>
+          <div class="grid-col grid-col--3"></div>
 
-                    </section>
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img1.png" onclick="openModal();currentSlide(1)" alt="Login">
+            <figcaption>
+                <h2 class="image-desc">Login</h3>
+                <div class="content">         
+                </div>
+            </figcaption>        
+          </div>
 
-                            <!-- Gallery -->
-                            <div class="gallery style2 medium lightbox onscroll-fade-in">
-                                <article>
-                                    <a href="images/FERate/game.png" class="image">
-                                        <img src="images/FERate/thumbs/game.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Created game</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/ingame.png" class="image">
-                                        <img src="images/FERate/thumbs/ingame.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Questionnairy inside VR</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/login.png" class="image">
-                                        <img src="images/FERate/thumbs/login.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>User login</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/question.png" class="image">
-                                        <img src="images/FERate/thumbs/question.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Slider question</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/yesno.png" class="image">
-                                        <img src="images/FERate/thumbs/yesno.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Yes or no question</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/multiple.png" class="image">
-                                        <img src="images/FERate/thumbs/multiple.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Multiple choice question</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/create.png" class="image">
-                                        <img src="images/FERate/thumbs/create.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Adding a new question</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/addquestion.png" class="image">
-                                        <img src="images/FERate/thumbs/addquestion.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Creating a new question</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/selectq.png" class="image">
-                                        <img src="images/FERate/thumbs/selectq.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Selecting questions for a Questionnairy</h3>
-                                    </div>
-                                </article>
-                                <article>
-                                    <a href="images/FERate/results.png" class="image">
-                                        <img src="images/FERate/thumbs/results.png" alt="" />
-                                    </a>
-                                    <div class="caption">
-                                        <h3>Questionnairy results</h3>
-                                    </div>
-                                </article>
-                            </div>            
-                        
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img2.png" onclick="openModal();currentSlide(2)" alt="Multiple choice">
+              <figcaption>
+                <h2 class="image-desc">Multiple choice</h3>
+                <div class="content"> 
+                </div>
+              </figcaption>     
+          </div>
 
-                <!-- Footer -->
-			    <footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; MyPortfolio. All rights reserved.</li><li>
-					</ul>
-				</div>
-			    </footer>
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img3.png" onclick="openModal();currentSlide(3)" alt="Slider question">
+            <figcaption>
+                <h2 class="image-desc">Slider question</h3>
+                <div class="content">
+                </div>
+            </figcaption>    
+          </div>
+
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img4.png" onclick="openModal();currentSlide(4)" alt="Yes or no question">
+
+              <figcaption>
+                <h2 class="image-desc">Yes or no question</h3>
+                <div class="content">
+                </div>
+              </figcaption>       
+          </div>
+
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img5.png" onclick="openModal();currentSlide(5)" alt="Game">
+
+            <figcaption>
+              <h2 class="image-desc">Game</h3>
+              <div class="content">       
+              </div>
+            </figcaption>  
+          </div>
+
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img6.png" onclick="openModal();currentSlide(6)" alt="Question in game">
+
+            <figcaption>
+              <h2 class="image-desc">Question in game</h3>
+              <div class="content">       
+              </div>
+            </figcaption>  
+          </div>
+
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img7.png" onclick="openModal();currentSlide(7)" alt="Question dashboard">
+
+            <figcaption>
+              <h2 class="image-desc">Question dashboard</h3>
+              <div class="content">       
+              </div>
+            </figcaption>  
+          </div>
+
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img8.png" onclick="openModal();currentSlide(8)" alt="New question">
+
+            <figcaption>
+              <h2 class="image-desc">New question</h3>
+              <div class="content">       
+              </div>
+            </figcaption>  
+          </div>
+
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img9.png" onclick="openModal();currentSlide(9)" alt="Question creation">
+
+            <figcaption>
+              <h2 class="image-desc">Question creation</h3>
+              <div class="content">       
+              </div>
+            </figcaption>  
+          </div>
+
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img10.png" onclick="openModal();currentSlide(10)" alt="Creating questionnaires">
+
+            <figcaption>
+              <h2 class="image-desc">Creating questionnaires</h3>
+              <div class="content">       
+              </div>
+            </figcaption>  
+          </div>
+
+          <div class="grid-item transition2">
+            <img src="images/projects/FERate/thumbs/img11.png" onclick="openModal();currentSlide(11)" alt="Statistics">
+
+            <figcaption>
+              <h2 class="image-desc">Statistics</h3>
+              <div class="content">       
+              </div>
+            </figcaption>  
+          </div>
+        
+        </div>
+
+        <!-- Popup window -->
+        <div id="modal-window" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <!-- images -->
+            <div class="image-window">
+              <img class="gallery-image"  src="images/projects/FERate/img1.png" style="width:100%; height: 100%;" alt="Login">
             </div>
+            <div class="image-window">
+              <img class="gallery-image" src="images/projects/FERate/img2.png" style="width:100%" alt="Multiple choice question">
+            </div>
+            <div class="image-window">
+              <img class="gallery-image" src="images/projects/FERate/img3.png" style="width:100%" alt="Slider question">
+            </div>
+            <div class="image-window">
+              <img class="gallery-image" src="images/projects/FERate/img4.png" style="width:100%" alt="Yes or no question">
+            </div>
+            <div class="image-window">
+              <img class="gallery-image" src="images/projects/FERate/img5.png" style="width:100%" alt="Whac-A-Mole game">
+            </div>
+            <div class="image-window">
+              <img class="gallery-image" src="images/projects/FERate/img6.png" style="width:100%" alt="Questionnairy in game">
+            </div>
+            <div class="image-window">
+              <img class="gallery-image" src="images/projects/FERate/img7.png" style="width:100%" alt="Questionnairy dashboard">
+            </div>
+            <div class="image-window">
+                <img class="gallery-image" src="images/projects/FERate/img8.png" style="width:100%" alt="Adding new question">
+              </div>
+            <div class="image-window">
+              <img class="gallery-image" src="images/projects/FERate/img9.png" style="width:100%" alt="Creating a new question">
+            </div>
+            <div class="image-window">
+                <img class="gallery-image" src="images/projects/FERate/img10.png" style="width:100%" alt="Adding questions to a questionnairy">
+            </div>
+            <div class="image-window">
+                <img class="gallery-image" src="images/projects/FERate/img11.png" style="width:100%" alt="Question answers statistics">
+            </div>
+          </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/story/jquery.min.js"></script>
-			<script src="assets/js/story/jquery.scrollex.min.js"></script>
-			<script src="assets/js/story/jquery.scrolly.min.js"></script>
-			<script src="assets/js/story/browser.min.js"></script>
-			<script src="assets/js/story/breakpoints.min.js"></script>
-			<script src="assets/js/story/util.js"></script>
-			<script src="assets/js/story/main.js"></script>
+          <!-- controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-	</body>
+          <!-- caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+        </div>
+
+      </div> <!-- end project-container-->
+
+    </section>
+    
+
+    <!-- Contact -->
+    <section id="contact" class="contact panel">
+        <div class="inner transition2">
+            <h3>contact_</h3>
+            <p>monika.matokanovic@gmail.com</p>
+        </div>
+
+    </section>
+
+    
+    <!-- Gallery -->
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <script>
+      var colc = new Colcade( '.grid', {
+        columns: '.grid-col',
+        items: '.grid-item'
+      });
+    </script>
+
+    <!-- Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content', {
+            x: '-30%',
+            opacity: 0,
+            duration: 2.5,
+            ease: "power4.out"
+        });
+
+        tl.from('.stagger1',{
+            opacity: 0,
+            x: -50,
+            stagger: .3,
+            duration: 2,
+            ease: "power4.out"
+        }, "-=1.5");
+
+        tl.from('.hero-design', {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: "power4.out"
+        }, "-=2");
+
+        gsap.from('.triangle-anim', {
+            stagger: .5,
+            scale: 0,
+            duration: 2.5,
+            ease: "back.out(1.7)"
+        });
+
+        const transitions = gsap.utils.toArray('.transition2');
+        transitions.forEach(t => {
+            gsap.from(t,{
+            scrollTrigger: {
+                trigger: t,
+                toggleActions: "restart none none none",
+                start: "center bottom"
+            },
+            y: 100,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+            })
+        });
+
+    </script>
+
+</body>
 </html>
